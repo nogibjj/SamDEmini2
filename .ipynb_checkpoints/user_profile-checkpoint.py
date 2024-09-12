@@ -21,7 +21,7 @@ fig.suptitle('User portrait illustration', fontsize=13, weight='bold')
 plt.tight_layout(rect=[0, 0, 1, 0.86])
 
 # ---- chart 1: Age distribution (histplot)---- #
-# inferred age and age groups
+# inferred age
 age_bins = [18, 25, 35, 45, 55, 65, 75, 90]
 age_labels = ['18-25', '26-35', '36-45', '46-55', '56-65', '66-75', '76-90']
 df['Age Group'] = pd.cut(df['Predicted Age'], bins=age_bins, labels=age_labels, right=False)
@@ -38,7 +38,7 @@ axes[0, 1].pie(zodiac_counts, labels=zodiac_counts.index, autopct='%1.1f%%', sta
 axes[0, 1].set_title('Zodiac Sign Distribution')
 
 # ---- chart3: distribution of MBTI ---- #
-
+# 过滤空数据，计算非空的分布
 mbti_counts = df['Predicted MBTI'].dropna().value_counts()
 angles = np.linspace(0, 2 * np.pi, len(mbti_counts), endpoint=False).tolist()  # 计算角度
 values = mbti_counts.values  

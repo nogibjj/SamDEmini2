@@ -1,4 +1,5 @@
-The project is design to illustrate a routine process of e-biz explorision# 
+# **The project is designed to illustrate a routine process of e-biz exploration**
+# 
 
 User Profile Explorision
 
@@ -29,7 +30,9 @@ Here is the structure of the project files and directories:
 ├── sales_prediction.py
 ├── test.py
 ├── user_data.csv
+├── user_profile.ipynb
+├── user_profile.pdf
 └── user_profile.py
 
-1 directory, 10 files
+1 directory, 12 files
 ```

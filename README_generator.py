@@ -18,7 +18,8 @@ def get_directory_structure():
 def generate_readme():
     # Create README.md file and write environment and directory info
     with open('README.md', 'w') as readme_file:
-        readme_file.write("The project is design to illustrate a routine process of e-biz explorision")
+        readme_file.write("# **The project is designed to illustrate a routine process of e-biz exploration**\n")
+
 
         readme_file.write("# \n\nUser Profile Explorision\n\n")
         readme_file.write("## Environment Information\n\n")
