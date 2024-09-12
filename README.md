@@ -11,6 +11,7 @@ The project uses the following Python environment and dependencies:
 matplotlib==3.9.2
 numpy==2.1.1
 pandas==2.2.2
+pytest==8.3.3
 scipy==1.14.1
 seaborn==0.13.2
 ```
@@ -27,12 +28,11 @@ Here is the structure of the project files and directories:
 ├── data_mocker.py
 ├── relation_explore.py
 ├── requirements.txt
+├── routine_test.py
 ├── sales_prediction.py
-├── test.py
 ├── user_data.csv
-├── user_profile.ipynb
 ├── user_profile.pdf
 └── user_profile.py
 
-1 directory, 12 files
+1 directory, 11 files
 ```
