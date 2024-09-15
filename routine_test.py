@@ -1,6 +1,7 @@
 import subprocess
 import sys
 import pytest
+# pylint: disable=unused-variable
 
 def test_user_profile_runs():
     """
