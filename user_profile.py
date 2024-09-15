@@ -1,27 +1,27 @@
-import time
+# import time
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-from ydata_profiling import ProfileReport
+# from ydata_profiling import ProfileReport
 # import pdfkit
-from weasyprint import HTML
+# from weasyprint import HTML
 # import textwrap
 
 
 
-def ydata_profile():
-    df = pd.read_csv('user_data.csv')
-    subset_df = df[['Predicted MBTI', 'User ID']]
-    # Generate the profile report
-    profile = ProfileReport(subset_df, title="MBTI Users")
-    profile.to_file('profile_output.html') 
-    print(time.time())
+# def ydata_profile():
+#     df = pd.read_csv('user_data.csv')
+#     subset_df = df[['Predicted MBTI', 'User ID']]
+#     # Generate the profile report
+#     profile = ProfileReport(subset_df, title="MBTI Users")
+#     profile.to_file('profile_output.html') 
+#     print(time.time())
 
-    HTML('profile_output.html').write_pdf('profile_output.pdf')
-    # pdfkit.from_file('profile_output.html', 'profile_output.pdf')
+#     HTML('profile_output.html').write_pdf('profile_output.pdf')
+#     # pdfkit.from_file('profile_output.html', 'profile_output.pdf')
 
-    print(time.time())
+#     print(time.time())
 
     # print("HTML and PDF reports have been generated.")
 
