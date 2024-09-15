@@ -1,8 +1,33 @@
+import time
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+from ydata_profiling import ProfileReport
+# import pdfkit
+from weasyprint import HTML
 # import textwrap
+
+
+
+def ydata_profile():
+    df = pd.read_csv('user_data.csv')
+    # Generate the profile report
+    # profile = ProfileReport(df, title="KOL Users")
+    # profile.to_file('profile_output.html') 
+    print(time.time())
+
+    HTML('profile_output.html').write_pdf('profile_output.pdf')
+    # pdfkit.from_file('profile_output.html', 'profile_output.pdf')
+
+    print(time.time())
+
+    # print("HTML and PDF reports have been generated.")
+
+
+
+
+
 
 def user_profile():
 
@@ -78,3 +103,4 @@ def user_profile():
 
 
 user_profile()
+# ydata_profile()

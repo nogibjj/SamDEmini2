@@ -5,36 +5,39 @@
 
 User Profile Explorision
 
-## Environment Information
 
-The project uses the following Python environment and dependencies:
 
-```
+## Project Dependencies
+The project dependencies listed in `requirements.txt` are as follows:
+
+```text
 matplotlib==3.9.2
 numpy==2.1.1
 pandas==2.2.2
+pdfkit==1.0.0
 pytest==8.3.3
-scipy==1.14.1
 seaborn==0.13.2
+weasyprint==62.3
+ydata_profiling==4.10.0
 ```
 
-## Project Structure
+## Project Directory Structure
+The structure of the project is as follows:
 
-Here is the structure of the project files and directories:
-
-```
-.
-├── DEassignment2.code-workspace
-├── README.md
-├── README_generator.py
-├── data_mocker.py
-├── relation_explore.py
-├── requirements.txt
-├── routine_test.py
-├── sales_prediction.py
-├── user_data.csv
-├── user_profile.pdf
-└── user_profile.py
-
-1 directory, 11 files
+```text
+- ./
+    - user_profile.pdf
+    - DEassignment2.code-workspace
+    - profile_output.html
+    - requirements.txt
+    - READMEtmp.md
+    - Makefile
+    - profile_output.pdf
+    - README.md
+    - user_data.csv
+    - test_main.py
+    - user_profile.py
+    - ODPSmocker/
+        - readme_gnr.py
+        - user_data_mocker.py
 ```
