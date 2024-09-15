@@ -12,9 +12,10 @@ from weasyprint import HTML
 
 def ydata_profile():
     df = pd.read_csv('user_data.csv')
+    subset_df = df[['Predicted MBTI', 'User ID']]
     # Generate the profile report
-    # profile = ProfileReport(df, title="KOL Users")
-    # profile.to_file('profile_output.html') 
+    profile = ProfileReport(subset_df, title="MBTI Users")
+    profile.to_file('profile_output.html') 
     print(time.time())
 
     HTML('profile_output.html').write_pdf('profile_output.pdf')
