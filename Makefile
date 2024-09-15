@@ -6,6 +6,7 @@ format:
 
 lint:
 	pylint --disable=R,C --ignore-patterns=test_.*?py *.py
+	# pylint: disable=unused-variable
 
 test: 
 	python -m pytest -cov=main test_main.py
