@@ -1,5 +1,7 @@
+[![CI](https://github.com/nogibjj/SamDEmini2/actions/workflows/ci.yml/badge.svg)](https://github.com/nogibjj/SamDEmini2/actions/workflows/ci.yml)
+
 # **The project is designed to illustrate a routine process of e-biz exploration**
-# 
+
 
 User Profile Explorision
 
